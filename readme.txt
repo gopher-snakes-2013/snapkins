@@ -1,8 +1,10 @@
-
-Painting tutorial
+### Tutorials
+Painting tutorials
 http://dev.opera.com/articles/view/html5-canvas-painting/
+http://diveintohtml5.info/canvas.html
 
 
+#### Drawing
 A basic outline from StackOverflow:
 1.) Attach a mousedown, mousemove, and mouseup event listener to the canvas DOM
 
