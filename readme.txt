@@ -13,3 +13,8 @@ A basic outline from StackOverflow:
 3.) on mousemove, continuously add a new point to the path with lineTo(), and color the last segment with stroke().
 
 4.) on mouseup, set a flag to disable the drawing.
+
+
+
+##### Good line by line summary
+http://diveintohtml5.info/canvas.html
