@@ -10,5 +10,4 @@ Dotenv.load
 
 get '/' do
   erb :index
-  p "-----------------------"
 end
