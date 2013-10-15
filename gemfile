@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 ruby "1.9.3"
 
+gem 'sinatra'
+gem 'sinatra-activerecord'
+
+
 group :production, :staging do
 # Bundler lets you use groups to only install gems in particular environments
 # http://bundler.io/v1.3/groups.html

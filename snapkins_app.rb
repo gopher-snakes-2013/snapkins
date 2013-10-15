@@ -8,3 +8,7 @@ require 'sinatra/activerecord'
 require 'dotenv'
 Dotenv.load
 
+get '/' do
+  erb :index
+  p "-----------------------"
+end
