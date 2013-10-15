@@ -1,0 +1,6 @@
+div#container {
+  position: relative;
+}
+canvas#doodleview {
+  border: 1px solid #000000;
+}
