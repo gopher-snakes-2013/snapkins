@@ -15,7 +15,6 @@ A basic outline from StackOverflow:
 4.) on mouseup, set a flag to disable the drawing.
 
 
-<<<<<<< HEAD
 ##################
 what we need to do:
 
@@ -41,4 +40,3 @@ what we need to do:
 
 ##### Good line by line summary
 http://diveintohtml5.info/canvas.html
->>>>>>> master
