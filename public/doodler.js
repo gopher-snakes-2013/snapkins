@@ -12,24 +12,24 @@ canvas.addEventListener("mousemove", draw, false);
 
 function draw(event){
 
-  var lastx, lasty;
+  // var lastx, lasty;
 
   if (flag === 0){
     console.log(event);
     // x -= canvas.offsetLeft;
     // y -= canvas.offsetTop;
-    
+
     var x = event.x - canvas.offsetLeft;
     var y = event.y - canvas.offsetTop;
-    context.strokeStyle = "magenta";
+    context.strokeStyle = "blue";
     // context.beginPath();
-    context.moveTo(lastx,lasty); //start position
+    // context.moveTo(lastx,lasty); //start position
     context.lineTo(x, y); //end position
     context.stroke();
     // context.closePath();
     // context.beginPath();
-    // lastx = x;
-    // lasty = y;
+    // lastx = nil;
+    // lasty = nil;
   }
 
   // if (flag === 1){

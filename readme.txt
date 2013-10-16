@@ -13,3 +13,26 @@ A basic outline from StackOverflow:
 3.) on mousemove, continuously add a new point to the path with lineTo(), and color the last segment with stroke().
 
 4.) on mouseup, set a flag to disable the drawing.
+
+
+##################
+what we need to do:
+
+- fix bug with line connection
+- put on heroku
+
+- figure out home page, what do we want opening to be?
+    -  canvas on homepage
+    = save button
+
+
+    - create a new canvas through a route
+
+
+- research how to save image
+    - databases?
+   - send images?
+
+
+- future features
+    - brush types
