@@ -36,5 +36,6 @@ function draw(event){
   //   lastx = event.x - canvas.offsetLeft;
   //   lasty = event.y - canvas.offsetTop;
   // }
+
 }
 
