@@ -1,0 +1,1 @@
+web: bundle exec ruby snapkins_app.rb -p $PORT
