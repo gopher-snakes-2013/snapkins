@@ -7,5 +7,10 @@ require './models/snapkin'
 ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'postgres://localhost/snapkins')
 
 get '/' do
-  erb :index
+  redirect '/canvas'
 end
+
+get '/canvas' do
+  erb :canvas
+end
+
