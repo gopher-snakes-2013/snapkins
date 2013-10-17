@@ -1,3 +1,5 @@
+When there's no napkins, there's snapkins!
+
 ### Tutorials
 Painting tutorials
 http://dev.opera.com/articles/view/html5-canvas-painting/
