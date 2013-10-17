@@ -1,5 +1,7 @@
-$(document).ready(function(){
-
+$('#save_version').on('click', function(event){
+  event.preventDefault();
+  console.log("hi");
+})
 
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
@@ -28,17 +30,3 @@ function draw(event){
   lasty = y;
 
 };
-  $('#save_version').on('click', function(event){
-    event.preventDefault();
-    var data = canvas.toDataURL();
-    console.log(data);
-    $.ajax({
-      type: 'post',
-      data: data,
-      url: '/canvas'
-    }).done(function(){
-      console.log("success")
-      $('#save_version').css('background',"red");
-    })
-})
-});

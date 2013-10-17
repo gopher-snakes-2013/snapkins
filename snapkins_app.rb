@@ -14,3 +14,9 @@ get '/canvas' do
   erb :canvas
 end
 
+post '/canvas' do
+  Snapkin.create(image_url: params)
+  200
+end
+
+
