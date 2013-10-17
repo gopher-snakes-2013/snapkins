@@ -1,5 +1,10 @@
-require 'sinatra/activrecord/rake'
-require './snapkins_app.rb'
+$LOAD_PATH.unshift(File.expand_path('.'))
+
+require 'sinatra/activerecord/rake'
+require './snapkins_app'
+
+
+
 
 begin
   require 'jasmine'
