@@ -18,6 +18,7 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.14)
+    bond (0.4.3)
     builder (3.1.4)
     capybara (2.1.0)
       mime-types (>= 1.16)
@@ -45,11 +46,20 @@ GEM
     multi_json (1.8.1)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
+    pg (0.17.0)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    ripl (0.7.0)
+      bond (~> 0.4.2)
+    ripl-multi_line (0.3.1)
+      ripl (>= 0.3.6)
+    ripl-rack (0.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5)
+      ripl (>= 0.3.5)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
@@ -80,6 +90,11 @@ GEM
     thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
+    tux (0.3.0)
+      ripl (>= 0.3.5)
+      ripl-multi_line (>= 0.2.4)
+      ripl-rack (>= 0.2.0)
+      sinatra (>= 1.2.1)
     tzinfo (0.3.38)
     websocket (1.0.7)
     xpath (2.0.0)
@@ -92,8 +107,10 @@ DEPENDENCIES
   capybara
   dotenv
   jasmine
+  pg
   rspec
   shotgun
   sinatra
   sinatra-activerecord
   thin
+  tux

@@ -4,7 +4,8 @@ ruby "1.9.3"
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'thin' #prevents unknown body length error, faster browser
-
+gem 'pg'
+gem 'tux'
 
 group :production, :staging do
 # Bundler lets you use groups to only install gems in particular environments
