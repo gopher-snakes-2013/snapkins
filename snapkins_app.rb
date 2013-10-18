@@ -12,6 +12,7 @@ ActiveRecord::Base.establish_connection(
 
 get '/' do
   redirect '/canvas'
+  # erb :index
 end
 
 get '/canvas' do
