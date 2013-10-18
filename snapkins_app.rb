@@ -5,7 +5,10 @@ require 'sinatra/activerecord'
 require './models/snapkin'
 require './models/version'
 
-ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'postgres://localhost/snapkins')
+ActiveRecord::Base.establish_connection(
+    :adapter =>'postgresql'
+  )
+# ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'postgres://localhost/snapkins')
 
 get '/' do
   redirect '/canvas'
