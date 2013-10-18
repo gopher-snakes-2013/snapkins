@@ -17,12 +17,6 @@ end
 
 post '/canvas' do
   Version.create(image_url: params[:data])
-  p "*"*60
-  p Version.all
-  # p params[:data]
-  Snapkin.destroy_all
-  p "!"*60
-  p Snapkin.all
   200
 end
 
