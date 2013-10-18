@@ -1,3 +1,11 @@
+$LOAD_PATH.unshift(File.expand_path('.'))
+
+require 'sinatra/activerecord/rake'
+require './snapkins_app'
+
+
+
+
 begin
   require 'jasmine'
   load 'jasmine/tasks/jasmine.rake'
