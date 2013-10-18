@@ -31,14 +31,19 @@ function draw(event){
   $('#save_version').on('click', function(event){
     event.preventDefault();
     var data = canvas.toDataURL();
+   // console.log($(data).serialize());
     console.log(data);
     $.ajax({
       type: 'post',
-      data: data,
-      url: '/canvas'
+      url: '/canvas',
+      data: {"data": data}
     }).done(function(){
       console.log("success")
       $('#save_version').css('background',"red");
     })
 })
 });
+
+
+
+

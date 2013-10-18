@@ -15,7 +15,9 @@ get '/canvas' do
 end
 
 post '/canvas' do
-  Snapkin.create(image_url: params)
+  Snapkin.create(image_url: params[:data])
+  # p params[:data]
+  p Snapkin.all
   200
 end
 
