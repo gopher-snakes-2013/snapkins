@@ -37,7 +37,6 @@ function draw(event){
     context.moveTo(lastx,lasty); //start position
     context.lineTo(x, y); //end position
     context.stroke();
-    // strokeColor =
   }
   lastx = x;
   lasty = y;
@@ -45,17 +44,16 @@ function draw(event){
 };
   $('#save_version').on('click', function(event){
     event.preventDefault();
-    var data = canvas.toDataURL();
-   // console.log($(data).serialize());
-    console.log(data);
+    var canvas_data = canvas.toDataURL();
+    // console.log(canvas_data);
     $.ajax({
       type: 'post',
       url: '/canvas',
-      data: {"data": data}
+      data: {"canvas_key": canvas_data}
     }).done(function(){
       console.log("success")
-      $('#save_version').css('background',"red");
-    })
+      $('#save_version').css('background',"gray");
+    });
 })
 });
 
