@@ -19,7 +19,8 @@ get '/canvas' do
 end
 
 post '/canvas' do
-  Version.create(image_url: params[:data])
+  # p params[:canvas_key]
+  Version.create(image_url: params[:canvas_key])
   200
 end
 
