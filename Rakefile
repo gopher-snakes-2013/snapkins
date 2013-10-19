@@ -4,8 +4,6 @@ require 'sinatra/activerecord/rake'
 require './snapkins_app'
 
 
-
-
 begin
   require 'jasmine'
   load 'jasmine/tasks/jasmine.rake'
